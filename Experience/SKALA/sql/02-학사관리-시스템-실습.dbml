@@ -1,0 +1,87 @@
+// ===== 공통 스키마: public =====
+
+Table public.instructors {
+  id integer [pk]
+  name varchar
+  email varchar
+  created_at datetime
+}
+
+Table public.courses {
+  id integer [pk]
+  title varchar
+  instructor_id integer [ref: > public.instructors.id]
+  created_at datetime
+}
+
+Table public.course_descriptions {
+  course_id integer [pk, ref: > public.courses.id]
+  description text
+}
+
+
+// ===== 서울 캠퍼스 스키마 =====
+
+Table seoul.students {
+  id integer [pk]
+  name varchar
+  email varchar
+  created_at datetime
+}
+
+Table seoul.enrollments {
+  student_id integer [ref: > seoul.students.id]
+  course_id integer [ref: > public.courses.id]
+  enrollment_date varchar
+  Note: "Composite PK (student_id, course_id) assumed"
+}
+
+Table seoul.reviews {
+  id integer [pk]
+  student_id integer [ref: > seoul.students.id]
+  course_id integer [ref: > public.courses.id]
+  comment text
+  created_at datetime
+}
+
+
+// ===== 제주 캠퍼스 스키마 =====
+
+Table jeju.students {
+  id integer [pk]
+  name varchar
+  email varchar
+  created_at datetime
+}
+
+Table jeju.enrollments {
+  student_id integer [ref: > jeju.students.id]
+  course_id integer [ref: > public.courses.id]
+  enrollment_date varchar
+  Note: "Composite PK (student_id, course_id) assumed"
+}
+
+Table jeju.reviews {
+  id integer [pk]
+  student_id integer [ref: > jeju.students.id]
+  course_id integer [ref: > public.courses.id]
+  comment text
+  created_at datetime
+}
+
+
+// ===== AI 분석 확장: analytics 스키마 =====
+
+Table analytics.student_embeddings {
+  campus varchar
+  student_id integer
+  embedding varchar  // VECTOR(512) 형태는 주석으로 대체
+  updated_at datetime
+  Note: "PK(campus, student_id) for vector search"
+}
+
+Table analytics.course_vectors {
+  course_id integer [ref: > public.courses.id]
+  vector varchar // VECTOR(512) 형태는 주석으로 대체
+  updated_at datetime
+}
