@@ -4,6 +4,23 @@ SKALA 교육 과정 실습 및 프로젝트 자료
 
 ---
 
+## 📁 agent-langgraph
+
+LangGraph를 활용한 AI 에이전트 개발
+
+- 01: LangGraph Basic - LangGraph 기본 개념 및 그래프 구조
+- 02: LangGraph Chatbot - 대화형 챗봇 구현
+- 03: LangGraph Agent - 에이전트 기본 구조 및 워크플로우
+- 04: LangGraph Agent Memory - 메모리 기반 에이전트
+- 05: LangGraph Streaming - 스트리밍 응답 처리
+- 06: LangGraph Human-in-the-Loop - 인간 개입형 에이전트
+- 07: State Manual Update - 상태 수동 업데이트
+- 08: State Customization - 커스텀 상태 관리
+- 09: ToolNode - 도구 노드 활용
+- 10: Branching - 조건부 분기 처리
+- 11: Add Conversation Summary - 대화 요약 기능
+- 12: Subgraph - 서브그래프 구조 설계
+
 ## 📁 cloud
 
 Docker 및 Kubernetes 클라우드 배포
