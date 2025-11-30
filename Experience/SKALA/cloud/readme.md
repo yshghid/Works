@@ -1,10 +1,16 @@
-# Cloud & Container
+# Cloud 
 
-Docker 및 Kubernetes를 활용한 클라우드 배포 실습 자료
+Docker 및 Kubernetes를 활용한 클라우드 배포 실습
+
+---
+## Contents
+
+- 01-Docker-배포-실습
+  - Nginx 기반 정적 웹사이트의 Docker 컨테이너화 및 Kubernetes 배포 실습
+
+---
 
 ## 01-Docker-배포-실습
-
-Nginx 기반 정적 웹사이트의 Docker 컨테이너화 및 Kubernetes 배포 실습
 
 ### 프로젝트 구조
 
