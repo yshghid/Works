@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sk019-posts-get
+  namespace: skala-practice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sk019-posts-get
+  template:
+    metadata:
+      labels:
+        app: sk019-posts-get
+    spec:
+      containers:
+        - name: posts-get
+          image: amdp-registry.skala-ai.com/skala25a/sk019-posts-get:1.0 #amdp-registry.skala-ai.com/skala25a/sk019-posts-get.arm64:1.0 #amdp-registry.skala-ai.com/skala25a/sk019-posts-get.amd64:1.0
+          ports:
+            - containerPort: 80

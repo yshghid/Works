@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>윤소현의 프로필</title>
+  <style>
+    /* 기본 스타일 */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    section {
+      background-color: white;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: circle;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* 넷플릭스 썸네일 */
+    .netflix-thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .netflix-thumbnails img {
+      width: 150px;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .netflix-thumbnails img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* 블로그 이미지 */
+    .blog-image {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* footer */
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* 반응형 */
+    @media (max-width: 600px) {
+      .netflix-thumbnails {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .netflix-thumbnails img {
+        width: 80%;
+      }
+    }
+        /* 추가 */
+    .playlist-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .playlist-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    <h1>윤소현의 프로필</h1>
+  </header>
+
+  <!-- 자기소개 -->
+  <section>
+    <h2>자기소개</h2>
+    <p>안녕하세요! 저는 윤소현입니다. 생명공학과 바이오인포메틱스를 전공하였습니다.<br>취미는 넷플릭스, 음악감상, 산책입니다.</p>
+  </section>
+
+  <!-- 취미 -->
+  <section>
+    <h2>취미</h2>
+    <ul>
+      <li>넷플릭스</li>
+      <li>음악감상</li>
+      <li>산책</li>
+    </ul>
+  </section>
+
+  <!-- 넷플릭스 -->
+  <section>
+    <h2>넷플릭스</h2>
+    <p>최근 본 작품:
+      <a href="https://www.netflix.com/search?q=%EB%AF%B8%EC%A7%80%EC%9D%98&jbv=82024804" target="_blank">미지의 서울</a> |
+      <a href="https://www.netflix.com/search?q=%EC%84%B1%EB%82%9C&jbv=81447461" target="_blank">성난 사람들</a> |
+      <a href="https://www.netflix.com/search?q=%EB%8D%B0%EB%B8%94%EC%8A%A4&jbv=81653386" target="_blank">데블스플랜2</a> |
+      <a href="https://www.netflix.com/browse?jbv=80994899" target="_blank">보헤미안 랩소디</a>
+    </p>
+    <div class="netflix-thumbnails">
+      <img src="media/net1.jpg" alt="미지의 서울" title="미지의 서울">
+      <img src="media/net2.jpg" alt="성난 사람들" title="성난 사람들">
+      <img src="media/net3.jpg" alt="데블스플랜2" title="데블스플랜2">
+      <img src="media/net4.jpg" alt="보헤미안 랩소디" title="보헤미안 랩소디">
+    </div>
+  </section>
+
+  <!-- 블로그 -->
+  <section>
+    <h2>블로그</h2>
+    <p><a href="https://yshghid.github.io/" target="_blank">블로그 링크</a>입니다.</p>
+    <img src="media/blog.jpg" alt="블로그 이미지" class="blog-image">
+  </section>
+
+  <!-- 플레이리스트 -->
+  <section>
+    <h2>플레이리스트</h2>
+    <p>자주 듣는 플레이리스트입니다.</p>
+    <a href="https://www.youtube.com/watch?v=gmLyLvyLiUU&t=793s" target="_blank">
+      <img src="media/playlist.jpg" alt="플레이리스트 이미지" class="playlist-img">
+    </a>
+  </section>
+
+  <!-- 연락처 -->
+  <section>
+    <h2>Contact</h2>
+    <p>
+      📧 이메일: <a href="mailto:yshggid@gmail.com">yshggid@gmail.com</a><br>
+      💻 GitHub: <a href="https://github.com/yshghid" target="_blank">https://github.com/yshghid</a>
+    </p>
+  </section>
+
+  <!-- 푸터 -->
+  <footer>
+    <p>© 2025 윤소현</p>
+  </footer>
+
+</body>
+</html>

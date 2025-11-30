@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sk019-posts-get-svc
+  namespace: skala-practice
+spec:
+  selector:
+    app: sk019-posts-get
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
