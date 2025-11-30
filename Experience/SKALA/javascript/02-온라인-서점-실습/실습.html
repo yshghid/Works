@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>온라인 서점</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    table {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .buttons {
+      margin-top: 30px;
+    }
+    .buttons button {
+      margin-right: 10px;
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+    #resultArea {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fafafa;
+    }
+    td.stock-updated {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 온라인 서점 - 등록된 도서 목록</h1>
+
+  <table id="bookTable">
+    <thead>
+      <tr>
+        <th>제목</th>
+        <th>저자</th>
+        <th>가격</th>
+        <th>재고</th>
+        <th>카테고리</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 도서 목록 표시 -->
+    </tbody>
+  </table>
+
+  <div class="buttons">
+    <button onclick="exercise1()">실습 1</button>
+    <button onclick="exercise2()">실습 2</button>
+    <button onclick="exercise3()">실습 3</button>
+    <button onclick="exercise4()">실습 4</button>
+    <button onclick="exercise5()">실습 5</button>
+  </div>
+
+  <div id="resultArea">
+    <h2>🧪 실습 결과</h2>
+    <ul id="resultList"></ul>
+  </div>
+
+  <script src="실습.js"></script>
+</body>
+</html>
