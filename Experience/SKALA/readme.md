@@ -50,13 +50,6 @@ PostgreSQL/MariaDB 데이터베이스 관리
 - 11: Backup & Restore - 데이터베이스 백업 및 복구
 - 12: MariaDB Setup Guide - MariaDB 설치 및 설정
 
-## 📁 etc
-
-기타 문서 및 참고 자료
-
-- 02: npm/pip 명령어 목록 - 패키지 관리 명령어 정리
-- 03: 보고서 작성요령 - 실습 보고서 작성 가이드
-
 ## 📁 fastapi
 
 FastAPI 백엔드 개발
@@ -150,18 +143,29 @@ SQL 및 데이터베이스 설계
 - 07: AI 고객리뷰 분석 시스템 - 감성 분석 및 벡터 검색
 - 08: 트랜잭션 실습 - ACID 속성 및 격리 수준
 
+## 📁 etc
+
+기타 문서 및 참고 자료
+
+- 02: npm/pip 명령어 목록 - 패키지 관리 명령어 정리
+- 03: 보고서 작성요령 - 실습 보고서 작성 가이드
+- 
 ---
 
 ## 주요 기술 스택
 
 **언어**: Python, JavaScript, Java, SQL
+
 **데이터베이스**: PostgreSQL, MariaDB, pgVector
+
 **웹**: FastAPI, Streamlit, HTML/CSS
+
 **AI/ML**: TensorFlow, PyTorch, Scikit-learn, Transformer, BERT
+
 **벡터 DB**: FAISS, Chroma
+
 **DevOps**: Docker, Kubernetes, Harbor
+
 **기타**: RAG, LLM, BI Tools (Tableau, Metabase)
 
----
-
-**작성자**: 윤소현 (yshmbid)
+#
