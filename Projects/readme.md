@@ -2,11 +2,10 @@
 
 ## 📁 Teracle
 
-UI 테스트 자동 생성 시스템
+UI 테스트 자동화 시스템
 - 01: 발표 자료 (사업계획서)
-- 02: Github 링크 https://github.com/experi-do/VitalTime
-- 03: 구현내용 정리 Notion https://open-trust-407.notion.site/VitalTime-AI-2bc766ec530e80b89068cad5e44a75fe?source=copy_link
-
+- 02: Github 링크 https://github.com/321-systems/teracle-BE/tree/main
+- 03: 구현내용 정리 Notion 
 ---
 
 ## 📁 VitalTime
@@ -14,7 +13,7 @@ UI 테스트 자동 생성 시스템
 응급 환자 중증도 예측 및 전원 지원 시스템
 - 01: 발표 자료 및 시연 영상
 - 02: Github 링크 https://github.com/experi-do/VitalTime
-- 03: 구현내용 정리 Notion https://open-trust-407.notion.site/VitalTime-AI-2bc766ec530e80b89068cad5e44a75fe?source=copy_link
+- 03: 구현내용 정리 Notion
 
 ---
 

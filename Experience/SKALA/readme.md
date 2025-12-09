@@ -152,7 +152,7 @@ SQL 및 데이터베이스 설계
 
 ---
 
-## 주요 기술 스택
+## 기술 스택
 
 **언어**: Python, JavaScript, Java, SQL
 
